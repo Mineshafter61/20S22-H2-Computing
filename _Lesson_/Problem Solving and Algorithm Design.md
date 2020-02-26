@@ -88,3 +88,19 @@ Python:
 def giveName(name):
   return "Hello " + name;
 ```
+
+## How variables are stored
+```python
+a = 5
+```
+1. When a variable is assigned a data value, the data value is moved from the static to the register. The data value is recognised by its address (e.g. E101).
+2. The value in the register is then moved to the RAM through the data bus. The location in the RAM is given by the address bus.
+
+### Storing of variable with manipulation to data value
+```python
+a = a + 8
+```
+1. Same as step 1 above.
+2. The values that will change the original value is also stored in the register. 
+3. The original value is manipulated and stored to the register.
+4. Same as step 2 above.
